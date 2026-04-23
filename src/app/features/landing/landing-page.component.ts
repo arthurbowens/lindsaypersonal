@@ -32,10 +32,16 @@ import { TestimonialsSectionComponent } from './components/testimonials-section/
     <main class="min-h-screen bg-[#FCE4EC] text-[#1A1A1A]">
       <app-header-section [content]="content.header"></app-header-section>
       <app-hero-section [content]="content.hero" [whatsappLink]="content.header.whatsappLink"></app-hero-section>
-      <app-problem-section [content]="content.problem"></app-problem-section>
+      <app-problem-section
+        [content]="content.problem"
+        [whatsappLink]="content.header.whatsappLink"
+      ></app-problem-section>
       <app-about-section [content]="content.about"></app-about-section>
       <app-pillars-section [pillars]="content.pillars"></app-pillars-section>
-      <app-results-section [stats]="content.stats"></app-results-section>
+      <app-results-section
+        [stats]="content.stats"
+        [whatsappLink]="content.header.whatsappLink"
+      ></app-results-section>
       <app-testimonials-section [testimonials]="content.testimonials"></app-testimonials-section>
       <app-objections-section [content]="content.objections"></app-objections-section>
       <app-audience-section [content]="content.audience"></app-audience-section>
